@@ -47,6 +47,9 @@ while True:
                     p['processo'].wait()  # Aguarda o encerramento processo
                     p['processo'] = None
 
+        if info_right == [False, True, False, False, True]:
+            break # Interrompe a captura de frames
+
 
     # Exibe a imagem (frame) capturada pela câmera
     cv2.imshow("Imagem", img)
